@@ -1,68 +1,56 @@
-/* Reset some default styles and set a background color */
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content]{
+    display: block;
+}
+
+html {
+    font-family: 'Oswald', sans-serif;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: rgb(158, 229, 255);
 }
 
-/* Style the header */
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-
-/* Style the navigation menu */
-nav {
-    background-color: #555;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-nav li {
-    display: inline;
-    margin: 10px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-}
-
-/* Style the sections */
-section {
+h1 {
+    padding: 0px;
     margin: 20px;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Style the article links in the blog section */
-article {
-    margin: 20px 0;
+p {
+    margin: 20px;
+    padding: 0px;
 }
 
-/* Style the address in the contact section */
-address {
-    font-style: normal;
+.tabs {
+    display:flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    border-bottom: 10px solid rgb(133, 227, 255);
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    font-size: 32px;
+    text-transform: uppercase;
 }
 
-/* Add some spacing for readability */
-h2 {
-    margin-top: 0;
+.tab {
+    cursor: pointer;
+    padding: 10px;
 }
 
-/* Style links */
-a {
-    color: #0078d4;
+.tab.active {
+    background-color: rgb(99, 199, 236)
 }
 
-a:hover {
-    text-decoration: underline;
+.tab:hover {
+    background-color: rgb(99, 199, 236)
+}
+
+.tab-content {
+    margin-left: 20px;
+    margin-right: 20px;
 }
